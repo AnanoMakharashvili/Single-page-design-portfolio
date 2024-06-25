@@ -32,7 +32,7 @@ body {
   background-color: black;
   color: white;
   width: 176px;
-  padding: 8px 28px;
+  padding: 17px;
   border-radius: 15px;
 }
 
@@ -81,7 +81,24 @@ body {
   text-align: left;
   transform: translate(-61px, 42px);
 }
+.four-card-style {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
 
+.three-card-style {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.two-cards-style {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
 .two-boxes-style {
   display: flex;
   flex-direction: row;
@@ -203,6 +220,13 @@ body {
   gap: 14px;
 }
 
+.about-amy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
 .amy-image-style {
   width: 300px;
 }
@@ -289,4 +313,110 @@ body {
 .arrow-style {
   background-color: black;
   border-radius: 28px;
+}
+
+@media (min-width: 768px) {
+  .logo-button-style {
+    display: flex;
+    gap: 457px;
+  }
+  .design-solutions-style {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 55.44px;
+    text-align: center;
+  }
+
+  .paragraph-style {
+    width: 573px;
+    top: 82px;
+    left: 58.5px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+    text-align: center;
+  }
+  .four-card-style {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 17px;
+  }
+
+  .three-card-style {
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+  }
+
+  .two-cards-style {
+    flex-direction: row;
+  }
+
+  .pattern-ui-ux-style {
+    padding: 54px;
+  }
+
+  .about-amy-style {
+    flex-direction: row;
+  }
+
+  .amy-image-style {
+    width: 364px;
+    transform: translateX(-81px);
+  }
+
+  .header-one-style {
+    font-size: 32px;
+    line-height: 40.32px;
+    text-align: left;
+    width: 339px;
+    height: 120px;
+  }
+
+  .info-style {
+    font-size: 18px;
+    line-height: 28px;
+    text-align: left;
+    width: 339px;
+    height: 140px;
+    top: 144px;
+  }
+
+  .work-style {
+    font-size: 32;
+  }
+
+  .image-slide-style {
+    width: 540px;
+  }
+
+  .box-style {
+    padding: 77px;
+  }
+
+  .call-with-me-style {
+    width: 540px;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40.32px;
+    text-align: center;
+  }
+
+  .paragraph-one-style {
+    width: 540px;
+    top: 66px;
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .button-two-style {
+    padding: 11px;
+    width: 230px;
+  }
 }
