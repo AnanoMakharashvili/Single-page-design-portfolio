@@ -18,6 +18,7 @@ body {
   gap: 24px;
   background-color: #fff7f0;
   padding: 6px;
+  overflow: hidden;
 }
 
 .logo-button-style {
@@ -176,6 +177,7 @@ body {
   border-radius: 14px;
   width: 343px;
   background-color: #61c4b7;
+  margin-top: 20px;
 }
 
 .image-photography-style {
@@ -306,15 +308,29 @@ body {
 .two-arrow-style {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  gap: 30px;
+  gap: 15px;
 }
 
 .arrow-style {
   background-color: black;
   border-radius: 28px;
+  padding: 23px;
+  border: none;
 }
 
+.arrow-style-ome {
+  background-color: black;
+  border-radius: 28px;
+  padding: 23px;
+  border: none;
+}
+
+.footer-style {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+}
 @media (min-width: 768px) {
   .logo-button-style {
     display: flex;
@@ -418,5 +434,125 @@ body {
   .button-two-style {
     padding: 11px;
     width: 230px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    gap: 80px;
+    padding: 21px;
+  }
+  .logo-button-style {
+    gap: 819px;
+  }
+  .button-one-consultation {
+    cursor: pointer;
+  }
+  .logo-button-style:hover .button-cons {
+    background-color: #755cde;
+    border: none;
+  }
+
+  .container-two {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .app-style {
+    transform: translate(-28px, 35px);
+  }
+
+  .photography-style {
+    transform: translate(-28px, 35px);
+  }
+  .pattern-photography {
+    padding: 44px;
+  }
+
+  .pattern-motion-graphics {
+    padding: 20px;
+  }
+
+  .motion-style {
+    transform: translateY(7px);
+  }
+  .two-cards-style {
+    flex-direction: column;
+    margin-left: 28px;
+    gap: 36px;
+  }
+
+  .button-two-style {
+    cursor: pointer;
+  }
+  .amy-image-style {
+    width: 410px;
+  }
+
+  .header-one-style {
+    width: 540px;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 50.4px;
+    text-align: left;
+  }
+
+  .info-style {
+    width: 540px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+    text-align: left;
+    color: #7a746e;
+  }
+  .about-amy:hover .free-butt {
+    background-color: #f6a560;
+    border: none;
+  }
+
+  .arrow-style {
+    cursor: pointer;
+  }
+
+  .arrow-style-ome {
+    cursor: pointer;
+  }
+
+  .arrow-style:hover.arr-butt {
+    background-color: #755cde;
+  }
+
+  .arrow-style-ome:hover.arr-butt-one {
+    background-color: #755cde;
+  }
+
+  .box-style {
+    flex-direction: row;
+    padding: 128px;
+    border-radius: 14px;
+    gap: 60px;
+  }
+
+  .call-with-me-style {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 50.4px;
+    text-align: left;
+  }
+
+  .paragraph-one-style {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+    text-align: left;
+  }
+
+  .button-two-style {
+    cursor: pointer;
+  }
+  .box-style:hover.free-butt {
+    background-color: #f6a560;
+    border: none;
   }
 }
