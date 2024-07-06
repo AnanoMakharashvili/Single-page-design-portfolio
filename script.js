@@ -31,7 +31,6 @@ imagePreviewSlider.addEventListener("click", () => {
   } else {
     secondImage.src = imageArray[index + 1];
   }
-  console.log(index);
 });
 
 imageNextSlider.addEventListener("click", () => {
@@ -51,5 +50,4 @@ imageNextSlider.addEventListener("click", () => {
   } else {
     secondImage.src = imageArray[index + 1];
   }
-  console.log(index);
 });
