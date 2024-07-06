@@ -12,40 +12,44 @@ const imageNextSlider = document.getElementById("arrow-next");
 const imageArray = [slide1, slide2, slide3, slide4, slide5];
 
 let index = 0;
-let number = 4;
+let numberOfPictures = imageArray.length - 1;
 
 imagePreviewSlider.addEventListener("click", () => {
   if (index <= 0) {
-    index = number;
+    index = numberOfPictures;
   } else {
     index--;
   }
   mainImage.src = imageArray[index];
-});
-
-imagePreviewSlider.addEventListener("click", () => {
-  if (index <= 0) {
-    index = number;
+  if (index === 0) {
+    firstImage.src = imageArray[imageArray.length - 1];
   } else {
-    index--;
+    firstImage.src = imageArray[index - 1];
   }
-  firstImage.src = imageArray[index];
+  if (index + 1 === imageArray.length) {
+    secondImage.src = imageArray[0];
+  } else {
+    secondImage.src = imageArray[index + 1];
+  }
+  console.log(index);
 });
 
 imageNextSlider.addEventListener("click", () => {
-  if (index >= number) {
+  if (index >= numberOfPictures) {
     index = 0;
   } else {
     index++;
   }
   mainImage.src = imageArray[index];
-});
-
-imageNextSlider.addEventListener("click", () => {
-  if (index >= number) {
-    index = 0;
+  if (index === 0) {
+    firstImage.src = imageArray[imageArray.length - 1];
   } else {
-    index++;
+    firstImage.src = imageArray[index - 1];
   }
-  secondImage.src = imageArray[index];
+  if (index + 1 === imageArray.length) {
+    secondImage.src = imageArray[0];
+  } else {
+    secondImage.src = imageArray[index + 1];
+  }
+  console.log(index);
 });
